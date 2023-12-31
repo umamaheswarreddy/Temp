@@ -81,7 +81,7 @@ public class Java8CommonProgrammingQA {
 
         Student student = studentList.stream()
                         .sorted(Comparator.comparingInt(Student::getRank))
-                                .skip(1)
+                                .skip(1)  // replace n with any number to get 2nd or 3rd highest number
                                         .findFirst().get();
 
         System.out.println(student);
